@@ -12,5 +12,6 @@ export default defineConfig({
     alpinejs(),
   ],
   site: 'https://CIIM-OPT.github.io',
+  // No necesitas configurar `base` porque el sitio está servido desde la raíz.
 });
 
