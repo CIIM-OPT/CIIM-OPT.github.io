@@ -9,6 +9,8 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   integrations: [
-    alpinejs()
-  ]
+    alpinejs(),
+  ],
+  site: 'https://CIIM-OPT.github.io',
 });
+
