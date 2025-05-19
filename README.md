@@ -1,1 +1,1 @@
-## WEllcome to the CIIM
+## Wellcome to the CIIM
