@@ -5,7 +5,7 @@ import Footer from '../../components/Footer.astro';
 
 export function getStaticPaths() {
   return [
-    { params: { slug: 'new-dashboard-features' } },
+    { params: { slug: 'new-dashboard-research' } },
     { params: { slug: 'mobile-app-launch' } },
     { params: { slug: 'api-improvements' } },
     { params: { slug: 'team-collaboration-tools' } },
@@ -18,8 +18,8 @@ const { slug } = Astro.params;
 
 // This would normally come from a CMS or database
 const posts = {
-  'new-dashboard-features': {
-    title: 'New Dashboard Features Released',
+  'new-dashboard-research': {
+    title: 'New Dashboard Research Released',
     date: 'May 15, 2025',
     author: 'Sarah Johnson',
     authorRole: 'Product Manager',
@@ -27,7 +27,7 @@ const posts = {
     category: 'Product Updates',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     content: `
-      <p class="mb-4">We're excited to announce the release of our new dashboard features designed to help you gain deeper insights into your business performance. These updates are based on feedback from our users and are aimed at making data analysis more intuitive and actionable.</p>
+      <p class="mb-4">We're excited to announce the release of our new dashboard research designed to help you gain deeper insights into your business performance. These updates are based on feedback from our users and are aimed at making data analysis more intuitive and actionable.</p>
       
       <h2 class="text-2xl font-semibold mb-4 mt-8">Key Improvements</h2>
       
@@ -46,7 +46,7 @@ const posts = {
       <p class="mb-4">The new performance metrics section provides a comprehensive overview of your business health with metrics such as:</p>
       
       <ul class="list-disc pl-6 mb-6 space-y-2">
-        <li>User engagement rates across different features</li>
+        <li>User engagement rates across different research</li>
         <li>Conversion metrics at each stage of your funnel</li>
         <li>Revenue tracking with growth comparisons</li>
         <li>Customer retention analysis</li>
@@ -69,7 +69,7 @@ const posts = {
         <li>Custom report builders for more flexible data analysis</li>
       </ul>
       
-      <p class="mb-4">We value your feedback and many of these features were developed based on suggestions from our user community. If you have ideas for how we can make our platform even better, please don't hesitate to reach out to our product team.</p>
+      <p class="mb-4">We value your feedback and many of these research were developed based on suggestions from our user community. If you have ideas for how we can make our platform even better, please don't hesitate to reach out to our product team.</p>
       
       <p>Thank you for being a valued customer. We're committed to continually improving our platform to help your business succeed.</p>
     `
@@ -80,14 +80,14 @@ const posts = {
     author: 'Michael Chen',
     authorRole: 'CTO',
     authorAvatar: 'https://randomuser.me/api/portraits/men/46.jpg',
-    category: 'New Features',
+    category: 'New Research',
     image: 'https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     content: `
       <p class="mb-4">Today marks an exciting milestone for our platform as we launch our mobile app for iOS and Android devices. Now you can access your workspace from anywhere, ensuring you never miss an important update or opportunity.</p>
       
-      <h2 class="text-2xl font-semibold mb-4 mt-8">Key Features</h2>
+      <h2 class="text-2xl font-semibold mb-4 mt-8">Key Research</h2>
       
-      <p class="mb-4">Our mobile app includes all the essential features you need on the go:</p>
+      <p class="mb-4">Our mobile app includes all the essential research you need on the go:</p>
       
       <ul class="list-disc pl-6 mb-6 space-y-2">
         <li>Real-time dashboard with key metrics and alerts</li>
@@ -100,7 +100,7 @@ const posts = {
       
       <h2 class="text-2xl font-semibold mb-4 mt-8">Designed for Mobile</h2>
       
-      <p class="mb-4">Rather than simply shrinking our web interface, we've completely reimagined the experience for mobile devices. The app features:</p>
+      <p class="mb-4">Rather than simply shrinking our web interface, we've completely reimagined the experience for mobile devices. The app research:</p>
       
       <ul class="list-disc pl-6 mb-6 space-y-2">
         <li>Touch-optimized controls and gestures</li>
@@ -134,10 +134,10 @@ const posts = {
       <p class="mb-4">This is just the beginning for our mobile experience. Our roadmap includes:</p>
       
       <ul class="list-disc pl-6 mb-6 space-y-2">
-        <li>Advanced reporting features with interactive charts</li>
+        <li>Advanced reporting research with interactive charts</li>
         <li>Camera integration for document scanning and image uploads</li>
         <li>Voice commands for hands-free operation</li>
-        <li>Augmented reality features for specific use cases</li>
+        <li>Augmented reality research for specific use cases</li>
         <li>Enhanced offline capabilities</li>
       </ul>
       
@@ -202,7 +202,7 @@ const posts = {
       
       <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg mb-8">
         <h3 class="text-xl font-semibold mb-3">Migration Guide</h3>
-        <p>We've prepared a comprehensive migration guide to help you transition from API v1 to v2. The guide includes detailed information on breaking changes, new features, and best practices for updating your integrations.</p>
+        <p>We've prepared a comprehensive migration guide to help you transition from API v1 to v2. The guide includes detailed information on breaking changes, new research, and best practices for updating your integrations.</p>
         <a href="#" class="inline-flex items-center mt-3 text-primary-600 dark:text-primary-400 font-medium hover:underline">
           View Migration Guide
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
@@ -217,12 +217,12 @@ const posts = {
       
       <ul class="list-disc pl-6 mb-6 space-y-2">
         <li><strong>Now - October 2025:</strong> Both API v1 and v2 available</li>
-        <li><strong>October 2025:</strong> API v1 enters maintenance mode (no new features)</li>
+        <li><strong>October 2025:</strong> API v1 enters maintenance mode (no new research)</li>
         <li><strong>April 2026:</strong> API v1 deprecated (still functional but with warnings)</li>
         <li><strong>October 2026:</strong> API v1 sunset (no longer available)</li>
       </ul>
       
-      <p class="mb-4">We recommend migrating to API v2 as soon as possible to take advantage of the new features and improvements.</p>
+      <p class="mb-4">We recommend migrating to API v2 as soon as possible to take advantage of the new research and improvements.</p>
       
       <p>If you have any questions or need assistance with the migration, please don't hesitate to reach out to our developer support team.</p>
     `
@@ -236,7 +236,7 @@ const posts = {
     category: 'Product Updates',
     image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     content: `
-      <p class="mb-4">We're thrilled to announce a major update to our collaboration features, designed to help teams work together more effectively and efficiently.</p>
+      <p class="mb-4">We're thrilled to announce a major update to our collaboration research, designed to help teams work together more effectively and efficiently.</p>
       
       <h2 class="text-2xl font-semibold mb-4 mt-8">Real-time Collaboration</h2>
       
@@ -282,7 +282,7 @@ const posts = {
       
       <div class="bg-primary-50 dark:bg-primary-900/30 p-6 rounded-lg mb-8">
         <h3 class="text-xl font-semibold mb-3 text-primary-700 dark:text-primary-300">Webinar: Mastering Team Collaboration</h3>
-        <p class="mb-4">Join us for a live webinar where we'll demonstrate these new features and share best practices for effective team collaboration.</p>
+        <p class="mb-4">Join us for a live webinar where we'll demonstrate these new research and share best practices for effective team collaboration.</p>
         <p class="font-medium">Date: June 5, 2025 at 11:00 AM PT</p>
         <a href="#" class="inline-flex items-center mt-3 text-primary-600 dark:text-primary-400 font-medium hover:underline">
           Register Now
@@ -304,7 +304,7 @@ const posts = {
         <li>Automated progress reports for stakeholders</li>
       </ul>
       
-      <p class="mb-4">These new collaboration features are available to all customers on Business and Enterprise plans, with limited functionality available on the Professional plan.</p>
+      <p class="mb-4">These new collaboration research are available to all customers on Business and Enterprise plans, with limited functionality available on the Professional plan.</p>
       
       <p>We're excited to see how these tools help your team work more effectively together. As always, we welcome your feedback as you explore these new capabilities.</p>
     `
@@ -322,7 +322,7 @@ const posts = {
       
       <h2 class="text-2xl font-semibold mb-4 mt-8">Enhanced Authentication</h2>
       
-      <p class="mb-4">We've strengthened our authentication system with several new features:</p>
+      <p class="mb-4">We've strengthened our authentication system with several new research:</p>
       
       <ul class="list-disc pl-6 mb-6 space-y-2">
         <li>FIDO2 WebAuthn support for passwordless authentication</li>
@@ -415,7 +415,7 @@ const posts = {
       
       <p class="mb-4">These security enhancements reflect our ongoing commitment to protecting your data and maintaining your trust. We will continue to invest in security and compliance as a core part of our platform.</p>
       
-      <p>If you have any questions about these security updates or need assistance implementing any of the new features, please contact our security team.</p>
+      <p>If you have any questions about these security updates or need assistance implementing any of the new research, please contact our security team.</p>
     `
   },
   'integration-marketplace': {
@@ -545,7 +545,7 @@ const posts = {
           <li>Technical support for integration development</li>
           <li>Co-marketing opportunities</li>
           <li>Revenue sharing for premium integrations</li>
-          <li>Early access to new API features</li>
+          <li>Early access to new API research</li>
         </ul>
         <a href="#" class="inline-flex items-center text-primary-600 dark:text-primary-400 font-medium hover:underline">
           Learn more about our partner program
@@ -578,17 +578,17 @@ const post = posts[slug];
 if (!post) return Astro.redirect('/404');
 ---
 
-<Layout title={`${post.title} - SaaSify Blog`} description={post.title}>
+<Layout title={`${post.title} - SaaSify Publications`} description={post.title}>
   <Header />
   <main>
     <article class="pt-32 pb-16 md:pt-40 md:pb-24">
       <div class="container-custom max-w-4xl">
         <div class="mb-8">
-          <a href="/blog" class="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+          <a href="/publications" class="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
             </svg>
-            Back to Blog
+            Back to Publications
           </a>
         </div>
         

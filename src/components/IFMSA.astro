@@ -1,70 +1,65 @@
 ---
 const plans = [
   {
-    name: "Starter",
-    price: 29,
-    description: "Perfect for small teams and startups",
-    features: [
-      "Up to 5 team members",
-      "10GB storage",
-      "Basic analytics",
-      "24/7 email support",
-      "API access"
+    name: "Mutations in SHP2 Protein (PTPN11) & LEOPARD Syndrome",
+    // price: 29,
+    description: "Analyze structural effects of PTPN11 mutations causing LEOPARD Syndrome using molecular dynamics and Ramachandran validation.",
+    research: [
+      "Linux terminal & visualization (Chimera, VMD)",
+      "Model selection from PDB & homology modeling",
+      "System setup: solvation, ions, minimization & equilibration",
+      "Molecular Dynamics (NVT/NPT) & trajectory analysis (RMSD, RMSF)"
     ],
-    cta: "Start Free Trial",
-    popular: false,
-    color: "primary"
-  },
-  {
-    name: "Professional",
-    price: 79,
-    description: "Ideal for growing businesses",
-    features: [
-      "Up to 20 team members",
-      "50GB storage",
-      "Advanced analytics",
-      "Priority support",
-      "API access",
-      "Custom integrations",
-      "Team collaboration tools"
-    ],
-    cta: "Start Free Trial",
+    cta: "Link to the Project",
+    link: "https://exchange.ifmsa.org/projects/show/1629",
     popular: true,
     color: "secondary"
   },
   {
-    name: "Enterprise",
-    price: 199,
-    description: "For large organizations with complex needs",
-    features: [
-      "Unlimited team members",
-      "500GB storage",
-      "Enterprise analytics",
-      "Dedicated account manager",
-      "API access",
-      "Custom integrations",
-      "Team collaboration tools",
-      "Advanced security features",
-      "Custom branding"
+    name: "Phytoestrogens from Aguaje vs. COVID‑19 Spike Protein",
+    // price: 79,
+    description: "Evaluate complexation of Mauritia flexuosa phytoestrogens with SARS‑CoV‑2 spike protein via docking and MD simulations.",
+    research: [
+      "Force field parametrization & quantum charge calculations",
+      "Molecular docking (AutoDock) & complex identification",
+      "MD setup: solvation, ions, minimization & equilibration",
+      "Trajectory analysis for conformational changes"
     ],
-    cta: "Contact Sales",
+    cta: "Link to the Project",
+    link: "https://exchange.ifmsa.org/projects/show/1628",
     popular: false,
-    color: "accent"
-  }
+    color: "secondary"
+  },
+  {
+    name: "GLP‑1 Receptor & Analog Interaction Properties",
+    // price: 199,
+    description: "Investigate physicochemical and thermodynamic interactions between GLP‑1 receptor and its pharmaceutical analogs via simulations.",
+    research: [
+      "PDB model retrieval & missing region building",
+      "System preparation: solvation, ions, minimization & equilibration",
+      "Docking analysis & MD simulations",
+      "Interaction profiling & thermodynamic correlation"
+    ],
+    cta: "Link to the Project",
+    link: "https://exchange.ifmsa.org/projects/show/428",
+    popular: false,
+    color: "secondary"
+  },
+  
 ];
 ---
 
 <section id="pricing" class="section bg-gray-50 dark:bg-gray-800/50">
   <div class="container-custom">
-    <div class="text-center max-w-3xl mx-auto mb-16">
+    <!-- <div class="text-center max-w-3xl mx-auto mb-16">
       <span class="inline-block px-4 py-1 rounded-full bg-accent-100 dark:bg-accent-900 text-accent-600 dark:text-accent-300 font-medium text-sm mb-4">
-        Pricing Plans
+        IFMSA Projects
       </span>
       <h2 class="mb-6 text-gray-900 dark:text-white">Simple, Transparent Pricing</h2>
       <p class="text-gray-600 dark:text-gray-300">
         Choose the plan that works best for your business. All plans include a 14-day free trial.
       </p>
-    </div>
+    </div> -->
     
     <div class="grid md:grid-cols-3 gap-8">
       {plans.map((plan, index) => (
@@ -79,14 +74,11 @@ const plans = [
           )}
           
           <h3 class="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{plan.name}</h3>
-          <div class="mb-4">
-            <span class="text-4xl font-bold text-gray-900 dark:text-white">${plan.price}</span>
-            <span class="text-gray-500 dark:text-gray-400">/month</span>
-          </div>
+
           <p class="text-gray-600 dark:text-gray-300 mb-6">{plan.description}</p>
           
           <ul class="space-y-3 mb-8">
-            {plan.features.map(feature => (
+            {plan.research.map(feature => (
               <li class="flex items-start">
                 <svg class={`w-5 h-5 text-${plan.color}-500 mr-2 shrink-0 mt-0.5`} fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
@@ -97,7 +89,7 @@ const plans = [
           </ul>
           
           <a 
-            href="#signup" 
+            href={plan.link}
             class={`w-full btn ${plan.popular ? `bg-${plan.color}-600 hover:bg-${plan.color}-700 text-white focus:ring-${plan.color}-500` : 'btn-outline'}`}
           >
             {plan.cta}
@@ -107,8 +99,8 @@ const plans = [
     </div>
     
     <div class="mt-12 text-center">
-      <p class="text-gray-600 dark:text-gray-300 mb-2">Need a custom plan for your specific needs?</p>
-      <a href="/contact" class="text-primary-600 dark:text-primary-400 font-medium hover:underline">Contact our sales team</a>
+      <p class="text-gray-600 dark:text-gray-300 mb-2">Need an advice ?</p>
+      <a href="/contact" class="text-primary-600 dark:text-primary-400 font-medium hover:underline">Contact with team</a>
     </div>
   </div>
 </section>

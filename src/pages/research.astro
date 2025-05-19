@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
-const features = [
+const research = [
   {
     title: "Molecular Dynamics",
     description: "Simulate the physical movements of atoms and molecules over time to gain insights into structural stability, conformational changes, and thermodynamic properties of biomolecular systems.",
@@ -30,7 +30,7 @@ const features = [
   },
   {
     title: "Meta Analysis",
-    description: "Keep your sensitive information protected with enterprise-grade security and compliance features.",
+    description: "Keep your sensitive information protected with enterprise-grade security and compliance research.",
     icon: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z",
     color: "primary"
   },
@@ -43,7 +43,7 @@ const features = [
 ];
 ---
 
-<Layout title="Features - Impressive Animations & Experiences">
+<Layout title="Research - Impressive Animations & Experiences">
   <Header />
   <main>
     <!-- Hero Section -->
@@ -55,11 +55,11 @@ const features = [
       <div class="container-custom relative z-10">
         <div class="text-center max-w-3xl mx-auto px-4">
           <h1 class="text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-6 text-gray-900 dark:text-white animate-slide-down">
-            Cutting-Edge <span class="text-accent-500">Features</span>
+            Cutting-Edge <span class="text-accent-500">Research</span>
           </h1>
-          <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6 md:mb-8 animate-slide-up" style="animation-delay: 200ms">
-            Explore our innovative features with interactive demonstrations and stunning visual effects.
-          </p>
+          <!-- <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6 md:mb-8 animate-slide-up" style="animation-delay: 200ms">
+            Explore our innovative research with interactive demonstrations and stunning visual effects.
+          </p> -->
         </div>
       </div>
       
@@ -73,7 +73,7 @@ const features = [
     <section class="section relative z-10 overflow-hidden py-12 md:py-16">
       <div class="container-custom">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {features.map((feature) => (
+          {research.map((feature) => (
             <div class="card p-6 md:p-8 h-full">
               <div class={`w-14 h-14 md:w-16 md:h-16 rounded-xl bg-${feature.color}-100 dark:bg-${feature.color}-900/30 flex items-center justify-center mb-4 md:mb-6`}>
                 <svg class={`w-7 h-7 md:w-8 md:h-8 text-${feature.color}-600 dark:text-${feature.color}-400`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -88,7 +88,7 @@ const features = [
       </div>
     </section>
 
-    <!-- Interactive Demo Section -->
+    <!-- Interactive Demo Section
     <section class="section bg-gray-50 dark:bg-gray-800/50 relative overflow-hidden py-12 md:py-16">
       <div class="container-custom">
         <div class="text-center max-w-3xl mx-auto mb-8 md:mb-16 px-4">
@@ -97,7 +97,7 @@ const features = [
           </span>
           <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-gray-900 dark:text-white">Experience Our Technology</h2>
           <p class="text-gray-600 dark:text-gray-300">
-            Try our interactive demo to see how our features can transform your digital experience.
+            Try our interactive demo to see how our research can transform your digital experience.
           </p>
         </div>
         
@@ -124,10 +124,10 @@ const features = [
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Feature Comparison -->
-    <section class="section py-12 md:py-16">
+    <!-- <section class="section py-12 md:py-16">
       <div class="container-custom">
         <div class="text-center max-w-3xl mx-auto mb-8 md:mb-16 px-4">
           <span class="inline-block px-4 py-1 rounded-full bg-accent-100 dark:bg-accent-900 text-accent-600 dark:text-accent-400 font-medium text-sm mb-4">
@@ -135,7 +135,7 @@ const features = [
           </span>
           <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-gray-900 dark:text-white">How We Compare</h2>
           <p class="text-gray-600 dark:text-gray-300">
-            See how our features stack up against the competition with our interactive comparison chart.
+            See how our research stack up against the competition with our interactive comparison chart.
           </p>
         </div>
         
@@ -210,15 +210,15 @@ const features = [
           </table>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Call to Action -->
-    <section class="section bg-linear-to-br from-primary-600 to-primary-800 dark:from-primary-800 dark:to-primary-900 text-white py-12 md:py-16">
+    <!-- <section class="section bg-linear-to-br from-primary-600 to-primary-800 dark:from-primary-800 dark:to-primary-900 text-white py-12 md:py-16">
       <div class="container-custom">
         <div class="text-center max-w-3xl mx-auto px-4">
           <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-white">Ready to Experience the Future?</h2>
           <p class="text-primary-100 mb-6 md:mb-8">
-            Join thousands of satisfied customers who have transformed their digital presence with our cutting-edge features.
+            Join thousands of satisfied customers who have transformed their digital presence with our cutting-edge research.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#signup" class="btn-accent text-sm md:text-base px-4 py-2 md:px-6 md:py-3 w-full sm:w-auto">
@@ -233,7 +233,7 @@ const features = [
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
   <Footer />
 </Layout>
@@ -417,8 +417,8 @@ const features = [
   // Store references to event listeners for cleanup
   const cleanupFunctions: Array<() => void> = [];
 
-  // Function to initialize all interactive features
-  function initializeFeatures() {
+  // Function to initialize all interactive research
+  function initializeResearch() {
     // Initialize Parallax Effect
     initializeParallax();
     
@@ -767,11 +767,11 @@ const features = [
     }
   }
   
-  // Initialize features on initial page load
-  document.addEventListener('DOMContentLoaded', initializeFeatures);
+  // Initialize research on initial page load
+  document.addEventListener('DOMContentLoaded', initializeResearch);
   
-  // Initialize features when navigating to this page with Astro's view transitions
-  document.addEventListener('astro:page-load', initializeFeatures);
+  // Initialize research when navigating to this page with Astro's view transitions
+  document.addEventListener('astro:page-load', initializeResearch);
   
   // Cleanup when page is unloaded or before navigation
   document.addEventListener('astro:before-swap', () => {

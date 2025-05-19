@@ -6,8 +6,8 @@ import HeroSection from '../../components/HeroSection.astro';
 
 const posts = [
   {
-    id: 'new-dashboard-features',
-    title: 'New Dashboard Features Released',
+    id: 'new-dashboard-research',
+    title: 'New Dashboard Research Released',
     excerpt: "We've added powerful new analytics tools to help you gain deeper insights into your business performance.",
     date: 'May 15, 2025',
     author: 'Sarah Johnson',
@@ -24,7 +24,7 @@ const posts = [
     author: 'Michael Chen',
     authorRole: 'CTO',
     authorAvatar: 'https://randomuser.me/api/portraits/men/46.jpg',
-    category: 'New Features',
+    category: 'New Research',
     image: 'https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
   },
   {
@@ -41,7 +41,7 @@ const posts = [
   {
     id: 'team-collaboration-tools',
     title: 'Enhanced Team Collaboration Tools',
-    excerpt: 'Collaborate more effectively with your team using our new real-time editing and commenting features.',
+    excerpt: 'Collaborate more effectively with your team using our new real-time editing and commenting research.',
     date: 'March 22, 2025',
     author: 'David Wilson',
     authorRole: 'Product Designer',
@@ -76,7 +76,7 @@ const posts = [
 const categories = [...new Set(posts.map(post => post.category))];
 ---
 
-<Layout title="Blog - SaaSify" description="Latest product updates, feature releases, and company news from SaaSify.">
+<Layout title="Publications - SaaSify" description="Latest product updates, feature releases, and company news from SaaSify.">
   <Header />
   <main>
     <HeroSection 
@@ -101,7 +101,7 @@ const categories = [...new Set(posts.map(post => post.category))];
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {posts.map((post, index) => (
           <div class="card border border-gray-200 dark:border-gray-700 overflow-hidden slide-up" style={'animation-delay: ' + (index * 100) + 'ms'}>
-            <a href={'/blog/' + post.id} class="block">
+            <a href={'/publications/' + post.id} class="block">
               <img 
                 src={post.image} 
                 alt={post.title}
@@ -115,7 +115,7 @@ const categories = [...new Set(posts.map(post => post.category))];
                 <span class="mx-2 text-gray-300 dark:text-gray-600">•</span>
                 <span class="text-sm text-gray-500 dark:text-gray-400">{post.date}</span>
               </div>
-              <a href={'/blog/' + post.id} class="block mb-3">
+              <a href={'/publications/' + post.id} class="block mb-3">
                 <h2 class="text-xl font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors">{post.title}</h2>
               </a>
               <p class="text-gray-600 dark:text-gray-300 mb-6">{post.excerpt}</p>
