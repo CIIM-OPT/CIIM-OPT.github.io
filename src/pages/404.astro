@@ -1,10 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Layout from '../layouts/Layout.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+
+const title = "Page Not Found - CIIM"
+const description = "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable."
 ---
 
-<Layout title="Page Not Found - Sassify">
+<Layout {title} {description}>
   <Header />
   <main>
     <section class="py-20 md:py-32">
@@ -26,4 +29,4 @@ import Footer from '../components/Footer.astro';
     </section>
   </main>
   <Footer />
-</Layout> 
+</Layout>
