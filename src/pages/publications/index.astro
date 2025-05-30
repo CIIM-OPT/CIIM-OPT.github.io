@@ -6,90 +6,78 @@ import HeroSection from '../../components/HeroSection.astro';
 
 const posts = [
   {
-    id: 'new-dashboard-research',
-    title: 'New Dashboard Research Released',
-    excerpt: "We've added powerful new analytics tools to help you gain deeper insights into your business performance.",
-    date: 'May 15, 2025',
-    author: 'Sarah Johnson',
-    authorRole: 'Product Manager',
-    authorAvatar: 'https://randomuser.me/api/portraits/women/32.jpg',
-    category: 'Product Updates',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+    id: 'anticonvulsant-macamides',
+    title: 'Anticonvulsant Effects of Synthetic N-(3-Methoxybenzyl)oleamide and N-(3-Methoxybenzyl)linoleamide Macamides: An In Silico and In Vivo Study',
+    excerpt: 'This study evaluates the anticonvulsant properties of novel synthetic macamides through computational and animal model analyses, indicating their potential therapeutic applications.',
+    date: '2025-01-15',
+    author: 'PhD. Badhin Gómez Valdez',
+    category: 'Research',
+    url: 'https://www.mdpi.com/1420-3049/30/2/333'
   },
   {
-    id: 'mobile-app-launch',
-    title: 'Introducing Our Mobile App',
-    excerpt: 'Access your workspace from anywhere with our new mobile app, now available for iOS and Android devices.',
-    date: 'April 28, 2025',
-    author: 'Michael Chen',
-    authorRole: 'CTO',
-    authorAvatar: 'https://randomuser.me/api/portraits/men/46.jpg',
-    category: 'New Research',
-    image: 'https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+    id: 'yap1-parp1-inhibitors-glioblastoma',
+    title: 'A Theoretical Study on the Efficacy and Mechanism of Combined YAP-1 and PARP-1 Inhibitors in the Treatment of Glioblastoma Multiforme Using Peruvian Maca Lepidium meyenii',
+    excerpt: 'This theoretical research explores the combined use of YAP-1 and PARP-1 inhibitors derived from Peruvian Maca in treating glioblastoma multiforme, suggesting enhanced therapeutic efficacy.',
+    date: '2024-01-10',
+    author: 'PhD. Badhin Gómez Valdez',
+    category: 'Research',
+    url: 'https://www.mdpi.com/1467-3045/47/1/40'
   },
   {
-    id: 'api-improvements',
-    title: 'API Improvements and New Endpoints',
-    excerpt: `We've expanded our API capabilities with new endpoints and improved documentation for developers.`,
-    date: 'April 10, 2025',
-    author: 'Emily Rodriguez',
-    authorRole: 'Lead Developer',
-    authorAvatar: 'https://randomuser.me/api/portraits/women/65.jpg',
-    category: 'Developer Updates',
-    image: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+    id: 'parp1-inhibitors-breast-cancer',
+    title: 'A Theoretical Study of the Interaction of PARP-1 with Natural and Synthetic Inhibitors: Advances in the Therapy of Triple-Negative Breast Cancer',
+    excerpt: 'This study investigates the interactions between PARP-1 and various inhibitors, providing insights into potential advancements in treating triple-negative breast cancer.',
+    date: '2023-09-15',
+    author: 'PhD. Badhin Gómez Valdez',
+    category: 'Research',
+    url: 'https://www.mdpi.com/1467-3045/46/9/558'
   },
   {
-    id: 'team-collaboration-tools',
-    title: 'Enhanced Team Collaboration Tools',
-    excerpt: 'Collaborate more effectively with your team using our new real-time editing and commenting research.',
-    date: 'March 22, 2025',
-    author: 'David Wilson',
-    authorRole: 'Product Designer',
-    authorAvatar: 'https://randomuser.me/api/portraits/men/22.jpg',
-    category: 'Product Updates',
-    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+    id: 'rv1417-rv2617c-nicotine-derivatives',
+    title: 'Study of the Rv1417 and Rv2617c Membrane Proteins and Their Interactions with Nicotine Derivatives as Potential Inhibitors of Erp Virulence-Associated Factor in Mycobacterium tuberculosis: An In Silico Approach',
+    excerpt: 'This in silico study analyzes the interactions between specific membrane proteins and nicotine derivatives, aiming to identify potential inhibitors of virulence factors in Mycobacterium tuberculosis.',
+    date: '2023-01-28',
+    author: 'PhD. Badhin Gómez Valdez',
+    category: 'Research',
+    url: 'https://d1wqtxts1xzle7.cloudfront.net/105687479/pdf-libre.pdf'
   },
   {
-    id: 'security-enhancements',
-    title: 'Security Enhancements and Compliance Updates',
-    excerpt: `We've strengthened our security measures and added new compliance certifications to keep your data safe.`,
-    date: 'March 5, 2025',
-    author: 'Jessica Lee',
-    authorRole: 'Security Officer',
-    authorAvatar: 'https://randomuser.me/api/portraits/women/45.jpg',
-    category: 'Security',
-    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+    id: 'tetracycline-chloramphenicol-interaction',
+    title: 'Theoretical Study at the Molecular Mechanics Level of the Interaction of Tetracycline and Chloramphenicol with the Antibiotic Receptors Present in Enterococcus faecalis (Q839F7) and Streptococcus mutans (Q8DS20)',
+    excerpt: 'This theoretical study examines how tetracycline and chloramphenicol interact with specific antibiotic receptors, providing insights into bacterial resistance mechanisms.',
+    date: '2022-11-15',
+    author: 'PhD. Badhin Gómez Valdez',
+    category: 'Research',
+    url: 'https://www.mdpi.com/2079-6382/11/11/1640'
   },
   {
-    id: 'integration-marketplace',
-    title: 'Introducing Our Integration Marketplace',
-    excerpt: 'Connect your favorite tools and services with our new integration marketplace featuring over 50 partners.',
-    date: 'February 18, 2025',
-    author: 'Robert Kim',
-    authorRole: 'Partnership Manager',
-    authorAvatar: 'https://randomuser.me/api/portraits/men/67.jpg',
-    category: 'Integrations',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+    id: 'polymer-nanoparticles-drug-delivery',
+    title: 'Design and Evaluation of Polymer-Based Nanoparticles for Targeted Drug Delivery in Cancer Therapy',
+    excerpt: 'This research focuses on designing polymer-based nanoparticles to enhance targeted drug delivery in cancer therapy, aiming to improve treatment efficacy and reduce side effects.',
+    date: '2022-07-10',
+    author: 'PhD. Badhin Gómez Valdez',
+    category: 'Research',
+    url: 'https://www.mdpi.com/2073-4360/14/13/2577'
   }
 ];
 
 const categories = [...new Set(posts.map(post => post.category))];
 ---
 
-<Layout title="Publications - SaaSify" description="Latest product updates, feature releases, and company news from SaaSify.">
+<Layout title="Publications - CIIM" description="Latest product updates, feature releases, and company news from SaaSify.">
   <Header />
   <main>
     <HeroSection 
-      title="Latest Updates & News" 
-      highlightText="Updates"
-      description="Stay up to date with our latest product updates, feature releases, and company news."
+      title="Latest Publications and Research" 
+      highlightText="Publications"
+      description="Stay up to date with our latest Publications."
     />
     
     <!-- Category Filter -->
     <div class="container-custom py-8">
       <div class="flex flex-wrap gap-4 justify-center mb-12">
         <a href="#" class="px-4 py-2 rounded-full bg-primary-600 text-white font-medium text-sm hover:bg-primary-700 transition-colors">
-          All Posts
+          All Publications
         </a>
         {categories.map((category) => (
           <a href={'#' + category.toLowerCase().replace(/\s+/g, '-')} class="px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
@@ -101,13 +89,7 @@ const categories = [...new Set(posts.map(post => post.category))];
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {posts.map((post, index) => (
           <div class="card border border-gray-200 dark:border-gray-700 overflow-hidden slide-up" style={'animation-delay: ' + (index * 100) + 'ms'}>
-            <a href={'/publications/' + post.id} class="block">
-              <img 
-                src={post.image} 
-                alt={post.title}
-                class="w-full h-48 object-cover"
-                loading="lazy"
-              />
+            <a href={post.url} target="_blank" rel="noopener noreferrer" class="block">
             </a>
             <div class="p-6">
               <div class="flex items-center mb-4">
@@ -115,22 +97,10 @@ const categories = [...new Set(posts.map(post => post.category))];
                 <span class="mx-2 text-gray-300 dark:text-gray-600">•</span>
                 <span class="text-sm text-gray-500 dark:text-gray-400">{post.date}</span>
               </div>
-              <a href={'/publications/' + post.id} class="block mb-3">
+              <a href={post.url} target="_blank" rel="noopener noreferrer" class="block mb-3">
                 <h2 class="text-xl font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors">{post.title}</h2>
               </a>
               <p class="text-gray-600 dark:text-gray-300 mb-6">{post.excerpt}</p>
-              <div class="flex items-center">
-                <img 
-                  src={post.authorAvatar} 
-                  alt={post.author} 
-                  class="w-10 h-10 rounded-full mr-3 object-cover"
-                  loading="lazy"
-                />
-                <div>
-                  <p class="font-medium text-gray-900 dark:text-white">{post.author}</p>
-                  <p class="text-sm text-gray-500 dark:text-gray-400">{post.authorRole}</p>
-                </div>
-              </div>
             </div>
           </div>
         ))}
