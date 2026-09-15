@@ -1,19 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
-import ContactForm from '../components/Contact.astro';
 import Footer from '../components/Footer.astro';
 import HeroSection from '../components/HeroSection.astro';
+import Contact from '../components/Contact.astro';
+import { getDict, getLocaleFromPath } from '../lib/i18n';
+
+const locale = getLocaleFromPath(Astro.url.pathname);
+const dict = getDict(locale);
 ---
 
-<Layout title="Contact Us">
+<Layout title={dict.contactPage.title} description={dict.contactPage.description}>
   <Header />
   <main>
-    <HeroSection 
-      title="Contact Us" 
-      description="We're here to help with any questions you might have."
+    <HeroSection
+      title={dict.contactPage.heroTitle}
+      highlightText={dict.contactPage.heroHighlight}
+      description={dict.contactPage.heroSubtitle}
     />
-    <ContactForm />
+    <Contact />
   </main>
   <Footer />
-</Layout> 
+</Layout>

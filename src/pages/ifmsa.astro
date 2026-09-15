@@ -1,21 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
-import PricingCmp from '../components/IFMSA.astro';
-import Newsletter from '../components/Newsletter.astro';
 import Footer from '../components/Footer.astro';
 import HeroSection from '../components/HeroSection.astro';
+import IfmsaCards from '../components/IfmsaCards.astro';
+import { getDict, getLocaleFromPath } from '../lib/i18n';
+
+const locale = getLocaleFromPath(Astro.url.pathname);
+const dict = getDict(locale);
 ---
 
-<Layout title="Exchange Projects - IFMSA">
+<Layout title={dict.ifmsaPage.title} description={dict.ifmsaPage.description}>
   <Header />
   <main>
-    <HeroSection 
-      title="IFMSA Exchange Projects"
-      description="Explore international medical exchange opportunities and shape your future in global healthcare."
+    <HeroSection
+      title={dict.ifmsaPage.heroTitle}
+      highlightText={dict.ifmsaPage.heroHighlight}
+      description={dict.ifmsaPage.heroSubtitle}
     />
-    <PricingCmp />
-    <!-- <Newsletter /> -->
+    <IfmsaCards />
   </main>
   <Footer />
 </Layout>

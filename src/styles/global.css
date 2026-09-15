@@ -3,17 +3,17 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-primary-50: #f5f3ff;
-  --color-primary-100: #ede9fe;
-  --color-primary-200: #ddd6fe;
-  --color-primary-300: #c4b5fd;
-  --color-primary-400: #a78bfa;
-  --color-primary-500: #8b5cf6;
-  --color-primary-600: #7c3aed;
-  --color-primary-700: #6d28d9;
-  --color-primary-800: #5b21b6;
-  --color-primary-900: #4c1d95;
-  --color-primary-950: #2e1065;
+  --color-primary-50: #f1f3ff;
+  --color-primary-100: #e1e4ff;
+  --color-primary-200: #c3c8fd;
+  --color-primary-300: #9a9ffb;
+  --color-primary-400: #6a6af0;
+  --color-primary-500: #4545d8;
+  --color-primary-600: #3030c0;
+  --color-primary-700: #20209b;
+  --color-primary-800: #101078;
+  --color-primary-900: #000061;
+  --color-primary-950: #000038;
 
   --color-secondary-50: #f8fafc;
   --color-secondary-100: #f1f5f9;
@@ -27,17 +27,17 @@
   --color-secondary-900: #0f172a;
   --color-secondary-950: #020617;
 
-  --color-accent-50: #fcfdf5;
-  --color-accent-100: #f8fadc;
-  --color-accent-200: #f3f7b0;
-  --color-accent-300: #eef484;
-  --color-accent-400: #e6ee54;
-  --color-accent-500: #d9e11a;
-  --color-accent-600: #bbc40f;
-  --color-accent-700: #99a10d;
-  --color-accent-800: #7c8012;
-  --color-accent-900: #676a14;
-  --color-accent-950: #373b05;
+  --color-accent-50: #effbf9;
+  --color-accent-100: #d3f4f0;
+  --color-accent-200: #a8e8e1;
+  --color-accent-300: #7ad7cd;
+  --color-accent-400: #46baae;
+  --color-accent-500: #2fa397;
+  --color-accent-600: #1f8279;
+  --color-accent-700: #186860;
+  --color-accent-800: #12514b;
+  --color-accent-900: #0e413d;
+  --color-accent-950: #062622;
 
   --color-warning-50: #fefce8;
   --color-warning-100: #fef9c3;
@@ -111,15 +111,15 @@
 }
 
 @utility btn-primary {
-  @apply btn bg-accent-400 hover:bg-accent-500 text-black shadow-md hover:shadow-lg;
+  @apply btn bg-primary-900 hover:bg-primary-800 text-white shadow-md hover:shadow-lg;
 }
 
 @utility btn-secondary {
-  @apply btn bg-primary-600 hover:bg-primary-700 text-white shadow-md hover:shadow-lg;
+  @apply btn bg-accent-600 hover:bg-accent-700 text-white shadow-md hover:shadow-lg;
 }
 
 @utility btn-accent {
-  @apply btn bg-accent-500 hover:bg-accent-600 text-black shadow-md hover:shadow-lg;
+  @apply btn bg-accent-400 hover:bg-accent-500 text-primary-950 shadow-md hover:shadow-lg;
 }
 
 @utility btn-outline {

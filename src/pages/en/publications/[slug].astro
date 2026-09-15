@@ -1,0 +1,29 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import PubDetail from '../../../components/PublicationDetail.astro';
+import { getDict } from '../../../lib/i18n';
+import { scholarlyArticleSchema } from '../../../lib/schema';
+import type { Publication } from '../../../lib/i18n';
+
+export interface Props {
+  pub: Publication;
+}
+
+export function getStaticPaths() {
+  return getDict('en').publications.map((pub) => ({ params: { slug: pub.id }, props: { pub, locale: 'en' as const } }));
+}
+
+const { pub } = Astro.props;
+const dict = getDict('en');
+const jsonLd = scholarlyArticleSchema(pub);
+---
+
+<Layout title={pub.title} description={pub.description} jsonLd={jsonLd}>
+  <Header />
+  <main>
+    <PubDetail pub={pub} />
+  </main>
+  <Footer />
+</Layout>

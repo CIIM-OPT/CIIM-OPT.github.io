@@ -1,0 +1,23 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import HeroSection from '../../components/HeroSection.astro';
+import ResearchCards from '../../components/ResearchCards.astro';
+import { getDict } from '../../lib/i18n';
+
+const dict = getDict('en');
+---
+
+<Layout title={dict.researchPage.title} description={dict.researchPage.description}>
+  <Header />
+  <main>
+    <HeroSection
+      title={dict.researchPage.heroTitle}
+      highlightText={dict.researchPage.heroHighlight}
+      description={dict.researchPage.heroSubtitle}
+    />
+    <ResearchCards />
+  </main>
+  <Footer />
+</Layout>

@@ -1,0 +1,23 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import HeroSection from '../../components/HeroSection.astro';
+import IfmsaCards from '../../components/IfmsaCards.astro';
+import { getDict } from '../../lib/i18n';
+
+const dict = getDict('en');
+---
+
+<Layout title={dict.ifmsaPage.title} description={dict.ifmsaPage.description}>
+  <Header />
+  <main>
+    <HeroSection
+      title={dict.ifmsaPage.heroTitle}
+      highlightText={dict.ifmsaPage.heroHighlight}
+      description={dict.ifmsaPage.heroSubtitle}
+    />
+    <IfmsaCards />
+  </main>
+  <Footer />
+</Layout>

@@ -2,30 +2,43 @@
 import '../styles/global.css';
 import '../styles/transitions.css';
 import { ViewTransitions } from 'astro:transitions';
+import Seo from '../components/Seo.astro';
+import { getDict, getLocaleFromPath } from '../lib/i18n';
+import type { Locale } from '../lib/i18n';
 
 export interface Props {
-  title: string;
+  title?: string;
   description?: string;
+  locale?: Locale;
+  noindex?: boolean;
+  jsonLd?: string;
 }
 
-const { 
-  title, 
-  description = "CIIM - Centro de Invetigaación en Ingeniería Molecular"
+const locale = Astro.props.locale ?? getLocaleFromPath(Astro.url.pathname);
+const dict = getDict(locale);
+const {
+  title = dict.meta.defaultTitle,
+  description = dict.meta.defaultDescription,
+  noindex = false,
+  jsonLd,
 } = Astro.props;
+const langAttr = locale === 'es' ? 'es' : 'en';
 ---
 
 <!doctype html>
-<html lang="en" x-data="{ darkMode: localStorage.getItem('darkMode') === 'true' }" x-init="$watch('darkMode', val => localStorage.setItem('darkMode', val))" :class="{ 'dark': darkMode }">
+<html lang={langAttr} x-data="{ darkMode: localStorage.getItem('darkMode') === 'true' }" x-init="$watch('darkMode', val => localStorage.setItem('darkMode', val))" :class="{ 'dark': darkMode }">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content={description} />
-    <title>{title}</title>
+    <Seo {title} {description} {locale} {noindex} {jsonLd} />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap" media="print" onload="this.onload=null;this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap">
+    </noscript>
     <ViewTransitions />
   </head>
   <body class="antialiased bg-white dark:bg-secondary-950 text-secondary-900 dark:text-secondary-100 transition-colors duration-300">

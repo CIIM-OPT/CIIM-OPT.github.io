@@ -1,0 +1,93 @@
+---
+import { site } from '../lib/config';
+import { getAlternateUrls } from '../lib/i18n';
+import type { Locale } from '../lib/i18n';
+
+interface Props {
+  title: string;
+  description: string;
+  locale: Locale;
+  noindex?: boolean;
+  ogType?: string;
+  jsonLd?: string;
+}
+
+const {
+  title,
+  description,
+  locale,
+  noindex = false,
+  ogType = 'website',
+  jsonLd,
+} = Astro.props;
+
+const url = new URL(Astro.url.pathname, site.url).toString();
+const alternates = getAlternateUrls(Astro.url.pathname);
+const ogLocale = locale === 'es' ? 'es_ES' : 'en_US';
+const ogImage = new URL(site.ogImage, site.url).toString();
+
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ScientificOrganization',
+      name: 'Centro de Investigación en Ingeniería Molecular (CIIM)',
+      alternateName: 'CIIM',
+      url: site.url,
+      logo: new URL(site.logo, site.url).toString(),
+      email: site.email,
+      parentOrganization: {
+        '@type': 'CollegeOrUniversity',
+        name: site.university,
+        url: site.parentOrgUrl,
+      },
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: site.address.streetAddress,
+        addressLocality: site.address.addressLocality,
+        addressRegion: site.address.addressRegion,
+        addressCountry: site.address.addressCountry,
+      },
+      sameAs: [site.github, site.linkedinDirector],
+    },
+    {
+      '@type': 'WebSite',
+      name: `${site.name} – ${site.fullName}`,
+      url: site.url,
+      inLanguage: ['es', 'en'],
+    },
+  ],
+};
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={url} />
+<link rel="alternate" hreflang="es" href={alternates.es} />
+<link rel="alternate" hreflang="en" href={alternates.en} />
+<link rel="alternate" hreflang="x-default" href={alternates.es} />
+{
+  noindex && <meta name="robots" content="noindex, follow" />
+}
+
+<meta property="og:type" content={ogType} />
+<meta property="og:locale" content={ogLocale} />
+<meta property="og:site_name" content={site.name} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={url} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
+
+<meta name="theme-color" content={site.themeColor} />
+
+<script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+{
+  jsonLd && <script type="application/ld+json" set:html={jsonLd} />
+}

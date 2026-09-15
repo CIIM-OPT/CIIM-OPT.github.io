@@ -1,0 +1,23 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import HeroSection from '../../components/HeroSection.astro';
+import TeamSection from '../../components/TeamSection.astro';
+import { getDict } from '../../lib/i18n';
+
+const dict = getDict('en');
+---
+
+<Layout title={dict.teamPage.title} description={dict.teamPage.description}>
+  <Header />
+  <main>
+    <HeroSection
+      title={dict.teamPage.heroTitle}
+      highlightText={dict.teamPage.heroHighlight}
+      description={dict.teamPage.heroSubtitle}
+    />
+    <TeamSection />
+  </main>
+  <Footer />
+</Layout>

@@ -1,0 +1,345 @@
+{
+  "meta": {
+    "defaultTitle": "CIIM – Molecular Engineering Research Center",
+    "defaultDescription": "CIIM is the Molecular Engineering Research Center at Universidad Católica de Santa María (Arequipa, Peru). Molecular dynamics, bioinformatics, chem-informatics, drug discovery, meta-analysis and QM/MM."
+  },
+  "nav": {
+    "home": "Home",
+    "research": "Research",
+    "ifmsa": "IFMSA",
+    "publications": "Publications",
+    "team": "Team",
+    "contact": "Contact",
+    "language": "Español"
+  },
+  "footer": {
+    "tagline": "The Molecular Engineering Research Center (CIIM) at Universidad Católica de Santa María drives computational research advancing molecular biology.",
+    "rights": "CIIM. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "followUs": "Follow us"
+  },
+  "home": {
+    "hero": {
+      "titleStart": "Molecular Engineering",
+      "titleEnd": "Research Center.",
+      "subtitle": "CIIM at Universidad Católica de Santa María drives molecular engineering research using computational methods, training researchers to advance the life sciences.",
+      "contact": "Contact us",
+      "repo": "Repository"
+    },
+    "research": {
+      "badge": "Research Areas",
+      "title": "Advancing Scientific Knowledge",
+      "description": "Our research center combines computational methods, molecular analysis, and data science to push the boundaries of scientific discovery and innovation.",
+      "exploreAll": "Explore all research"
+    }
+  },
+  "researchPage": {
+    "title": "Research – CIIM",
+    "description": "CIIM research areas: molecular dynamics, bioinformatics, chem-informatics, drug discovery, meta-analysis and QM/MM applied to molecular engineering.",
+    "badge": "Research Areas",
+    "heroTitle": "Cutting-Edge",
+    "heroHighlight": "Research",
+    "heroSubtitle": "Explore the research areas of our center, where computational methods are applied to fundamental problems in molecular biology."
+  },
+  "researchAreas": [
+    {
+      "title": "Molecular Dynamics",
+      "description": "Simulate the physical movements of atoms and molecules over time to gain insights into structural stability, conformational changes, and thermodynamic properties of biomolecular systems.",
+      "icon": "M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2",
+      "color": "primary"
+    },
+    {
+      "title": "Bioinformatics",
+      "description": "Analyze and interpret biological data using computational tools and algorithms, enabling discoveries in genomics, transcriptomics, and personalized medicine.",
+      "icon": "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z",
+      "color": "secondary"
+    },
+    {
+      "title": "Chem-Informatics",
+      "description": "Utilize chemical structure data and informatics techniques to discover patterns, predict properties, and guide rational drug design and compound optimization.",
+      "icon": "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
+      "color": "accent"
+    },
+    {
+      "title": "Drug Discovery",
+      "description": "Accelerate the identification and optimization of potential therapeutic compounds using integrated computational pipelines, screening libraries, and predictive models.",
+      "icon": "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15",
+      "color": "warning"
+    },
+    {
+      "title": "Meta-Analysis",
+      "description": "Integrate and statistically analyze results from multiple studies to derive robust, evidence-based conclusions across large biological datasets or clinical trials.",
+      "icon": "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z",
+      "color": "primary"
+    },
+    {
+      "title": "QM/MM",
+      "description": "Combine quantum mechanics and molecular mechanics methods to study chemical and biological phenomena with high accuracy, especially at reaction sites and enzymatic systems.",
+      "icon": "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z",
+      "color": "secondary"
+    }
+  ],
+  "ifmsaPage": {
+    "title": "IFMSA Exchange Projects – CIIM",
+    "description": "CIIM research projects available through the IFMSA exchange program for medical students: proteins, biopharmaceuticals and molecular interactions.",
+    "badge": "IFMSA Projects",
+    "heroTitle": "IFMSA Exchange",
+    "heroHighlight": "Projects",
+    "heroSubtitle": "Explore international medical exchange opportunities and shape your future in global healthcare.",
+    "cta": "Link to the project",
+    "needAdvice": "Need advice?",
+    "contactTeam": "Contact the team"
+  },
+  "ifmsaProjects": [
+    {
+      "name": "Mutations in SHP2 Protein (PTPN11) & LEOPARD Syndrome",
+      "description": "Analyze structural effects of PTPN11 mutations causing LEOPARD Syndrome using molecular dynamics and Ramachandran validation.",
+      "features": [
+        "Linux terminal & visualization (Chimera, VMD)",
+        "Model selection from PDB & homology modeling",
+        "System setup: solvation, ions, minimization & equilibration",
+        "Molecular Dynamics (NVT/NPT) & trajectory analysis (RMSD, RMSF)"
+      ],
+      "link": "https://exchange.ifmsa.org/projects/show/1629",
+      "popular": true,
+      "color": "secondary"
+    },
+    {
+      "name": "Phytoestrogens from Aguaje vs. COVID-19 Spike Protein",
+      "description": "Evaluate complexation of Mauritia flexuosa phytoestrogens with SARS-CoV-2 spike protein via docking and MD simulations.",
+      "features": [
+        "Force field parametrization & quantum charge calculations",
+        "Molecular docking (AutoDock) & complex identification",
+        "MD setup: solvation, ions, minimization & equilibration",
+        "Trajectory analysis for conformational changes"
+      ],
+      "link": "https://exchange.ifmsa.org/projects/show/1628",
+      "popular": false,
+      "color": "secondary"
+    },
+    {
+      "name": "GLP-1 Receptor & Analog Interaction Properties",
+      "description": "Investigate physicochemical and thermodynamic interactions between GLP-1 receptor and its pharmaceutical analogs via simulations.",
+      "features": [
+        "PDB model retrieval & missing region building",
+        "System preparation: solvation, ions, minimization & equilibration",
+        "Docking analysis & MD simulations",
+        "Interaction profiling & thermodynamic correlation"
+      ],
+      "link": "https://exchange.ifmsa.org/projects/show/428",
+      "popular": false,
+      "color": "secondary"
+    }
+  ],
+  "publicationsPage": {
+    "title": "Publications – CIIM",
+    "description": "Scientific publications of CIIM in indexed journals (MDPI): anticonvulsant macamides, PARP-1 inhibitors, tuberculosis, bacterial resistance and nanoparticles.",
+    "badge": "Scientific Publications",
+    "heroTitle": "Publications &",
+    "heroHighlight": "Research",
+    "heroSubtitle": "Discover the scientific publications of our center in indexed international journals.",
+    "filterAll": "All publications"
+  },
+  "publications": [
+    {
+      "id": "anticonvulsant-macamides",
+      "title": "Anticonvulsant Effects of Synthetic N-(3-Methoxybenzyl)oleamide and N-(3-Methoxybenzyl)linoleamide Macamides: An In Silico and In Vivo Study",
+      "description": "This study evaluates the anticonvulsant properties of novel synthetic macamides through computational and animal model analyses, indicating their potential therapeutic applications.",
+      "year": "2025",
+      "author": "PhD. Badhin Gómez Valdez",
+      "journal": "Molecules",
+      "url": "https://www.mdpi.com/1420-3049/30/2/333",
+      "doi": "10.3390/molecules30020333",
+      "keywords": ["macamides", "anticonvulsant", "molecular docking", "molecular dynamics", "Lepidium meyenii"]
+    },
+    {
+      "id": "yap1-parp1-inhibitors-glioblastoma",
+      "title": "A Theoretical Study on the Efficacy and Mechanism of Combined YAP-1 and PARP-1 Inhibitors in the Treatment of Glioblastoma Multiforme Using Peruvian Maca Lepidium meyenii",
+      "description": "This theoretical research explores the combined use of YAP-1 and PARP-1 inhibitors derived from Peruvian Maca in treating glioblastoma multiforme, suggesting enhanced therapeutic efficacy.",
+      "year": "2024",
+      "author": "PhD. Badhin Gómez Valdez",
+      "journal": "International Journal of Molecular Sciences",
+      "url": "https://www.mdpi.com/1467-3045/47/1/40",
+      "doi": "10.3390/ijms47010040",
+      "keywords": ["glioblastoma", "PARP-1", "YAP-1", "Peruvian maca", "in silico inhibitors"]
+    },
+    {
+      "id": "parp1-inhibitors-breast-cancer",
+      "title": "A Theoretical Study of the Interaction of PARP-1 with Natural and Synthetic Inhibitors: Advances in the Therapy of Triple-Negative Breast Cancer",
+      "description": "This study investigates the interactions between PARP-1 and various inhibitors, providing insights into potential advancements in treating triple-negative breast cancer.",
+      "year": "2023",
+      "author": "PhD. Badhin Gómez Valdez",
+      "journal": "International Journal of Molecular Sciences",
+      "url": "https://www.mdpi.com/1467-3045/46/9/558",
+      "doi": "10.3390/ijms46090558",
+      "keywords": ["PARP-1", "triple-negative breast cancer", "inhibitors", "theoretical study", "docking"]
+    },
+    {
+      "id": "rv1417-rv2617c-nicotine-derivatives",
+      "title": "Study of the Rv1417 and Rv2617c Membrane Proteins and Their Interactions with Nicotine Derivatives as Potential Inhibitors of Erp Virulence-Associated Factor in Mycobacterium tuberculosis: An In Silico Approach",
+      "description": "This in silico study analyzes the interactions between specific membrane proteins and nicotine derivatives, aiming to identify potential inhibitors of virulence factors in Mycobacterium tuberculosis.",
+      "year": "2023",
+      "author": "PhD. Badhin Gómez Valdez",
+      "journal": "Biomolecules",
+      "url": "https://www.mdpi.com/2218-273X/13/2/248",
+      "doi": "10.3390/biom13020248",
+      "keywords": ["Mycobacterium tuberculosis", "membrane proteins", "nicotine derivatives", "Erp factor", "in silico"]
+    },
+    {
+      "id": "tetracycline-chloramphenicol-interaction",
+      "title": "Theoretical Study at the Molecular Mechanics Level of the Interaction of Tetracycline and Chloramphenicol with the Antibiotic Receptors Present in Enterococcus faecalis (Q839F7) and Streptococcus mutans (Q8DS20)",
+      "description": "This theoretical study examines how tetracycline and chloramphenicol interact with specific antibiotic receptors, providing insights into bacterial resistance mechanisms.",
+      "year": "2022",
+      "author": "PhD. Badhin Gómez Valdez",
+      "journal": "Antibiotics",
+      "url": "https://www.mdpi.com/2079-6382/11/11/1640",
+      "doi": "10.3390/antibiotics11111640",
+      "keywords": ["tetracycline", "chloramphenicol", "Enterococcus faecalis", "Streptococcus mutans", "molecular mechanics"]
+    },
+    {
+      "id": "polymer-nanoparticles-drug-delivery",
+      "title": "Design and Evaluation of Polymer-Based Nanoparticles for Targeted Drug Delivery in Cancer Therapy",
+      "description": "This research focuses on designing polymer-based nanoparticles to enhance targeted drug delivery in cancer therapy, aiming to improve treatment efficacy and reduce side effects.",
+      "year": "2022",
+      "author": "PhD. Badhin Gómez Valdez",
+      "journal": "Polymers",
+      "url": "https://www.mdpi.com/2073-4360/14/13/2577",
+      "doi": "10.3390/polym14132577",
+      "keywords": ["nanoparticles", "polymers", "drug delivery", "cancer therapy", "molecular engineering"]
+    }
+  ],
+  "publicationDetail": {
+    "back": "Back to publications",
+    "publishedIn": "Published in",
+    "abstract": "Abstract",
+    "keywords": "Keywords",
+    "viewFullArticle": "View full article"
+  },
+  "teamPage": {
+    "title": "Team – CIIM",
+    "description": "Meet the CIIM team: director, research assistants and researchers of the Molecular Engineering Research Center at UCSM.",
+    "badge": "Our Team",
+    "heroTitle": "Meet Our",
+    "heroHighlight": "Team",
+    "heroSubtitle": "Discover the talented researchers driving innovation at our research center.",
+    "directorLabel": "Director",
+    "assistantsLabel": "Research Assistants",
+    "teamLabel": "Research Team",
+    "members": [
+      {
+        "name": "PhD. Badhin Gómez",
+        "role": "Director",
+        "roleKey": "director",
+        "image": "/team/Badhin-Gomez.jpg",
+        "linkedin": "https://www.linkedin.com/in/badhin-gómez-valdez-b1a55a70"
+      },
+      {
+        "name": "Renato Valencia",
+        "role": "Research Assistant",
+        "roleKey": "assistant",
+        "image": "/team/Renato-Valencia.jpeg",
+        "linkedin": "https://pe.linkedin.com/in/rjva29/"
+      },
+      {
+        "name": "Fabio Del Carpio",
+        "role": "Research Assistant",
+        "roleKey": "assistant",
+        "image": "/team/Fabrio-Del-Carpio.jpg",
+        "linkedin": "https://www.linkedin.com/in/fabiodelcarpioc"
+      },
+      {
+        "name": "David Quispe",
+        "role": "Research Assistant",
+        "roleKey": "assistant",
+        "image": "/team/David-Quispe.jpg",
+        "linkedin": "https://www.linkedin.com/in/djquispe"
+      },
+      {
+        "name": "Gabriel Turpo",
+        "role": "Researcher",
+        "roleKey": "researcher",
+        "image": "/team/Gabriel-Turpo.jpg",
+        "linkedin": "https://www.linkedin.com/in/albert-gabriel-turpo-peqqueña-148831325"
+      },
+      {
+        "name": "Pierina Carbajal",
+        "role": "Junior Researcher",
+        "roleKey": "junior",
+        "image": "/team/Pierina-Carbajal.jpg",
+        "linkedin": "https://www.linkedin.com/in/pierinacarllere"
+      }
+    ]
+  },
+  "contactPage": {
+    "title": "Contact – CIIM",
+    "description": "Contact the Molecular Engineering Research Center (CIIM) at UCSM in Arequipa, Peru. Write to bgomez@ucsm.edu.pe for collaborations and research inquiries.",
+    "badge": "Contact",
+    "heroTitle": "Contact",
+    "heroHighlight": "Contact",
+    "heroSubtitle": "We're here to help with any questions about our research, collaborations, or academic programs.",
+    "getInTouch": "Get In Touch",
+    "heading": "We're Here to Assist You",
+    "inquiry": "For inquiries about our research, collaborations, or academic programs, feel free to reach out. Our team is ready to support and guide you.",
+    "emailTitle": "Email Us",
+    "visitTitle": "Visit Us",
+    "visitAddress": "Campus UCSM, Arequipa, Peru",
+    "followUs": "Follow Us"
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy – CIIM",
+      "description": "Privacy policy for the website of the Molecular Engineering Research Center (CIIM).",
+      "heading": "Privacy Policy",
+      "sections": [
+        {
+          "title": "Information we collect",
+          "body": "This website is informational. We do not collect personal data from visitors except for information you voluntarily provide by email or through contact forms."
+        },
+        {
+          "title": "Use of information",
+          "body": "Information you share is used only to respond to your inquiries, coordinate academic or research collaborations, and share publications. We never sell your information to third parties."
+        },
+        {
+          "title": "Browsing data",
+          "body": "As with any static website, servers may record basic technical data (IP address, browser type). We use no tracking cookies or advertising profiles."
+        },
+        {
+          "title": "Contact",
+          "body": "For questions about this policy, write to bgomez@ucsm.edu.pe. CIIM, Universidad Católica de Santa María, Arequipa, Peru."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms & Conditions – CIIM",
+      "description": "Terms and conditions of use for the website of the Molecular Engineering Research Center (CIIM).",
+      "heading": "Terms & Conditions",
+      "sections": [
+        {
+          "title": "Site content",
+          "body": "The content of this website, including publications, images and institutional information, is provided for informational and academic purposes. CIIM reserves the right to modify it without prior notice."
+        },
+        {
+          "title": "Intellectual property",
+          "body": "Linked scientific publications are the property of their authors and respective journals. Original CIIM content may not be reproduced without authorization."
+        },
+        {
+          "title": "Disclaimer",
+          "body": "Site information is provided 'as is' without warranties of accuracy, completeness or fitness. CIIM is not responsible for how third parties use the content."
+        },
+        {
+          "title": "Contact",
+          "body": "For questions about these terms, write to bgomez@ucsm.edu.pe."
+        }
+      ]
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found – CIIM",
+    "description": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+    "heading": "Page Not Found",
+    "message": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+    "returnHome": "Return Home",
+    "contact": "Contact Support"
+  }
+}

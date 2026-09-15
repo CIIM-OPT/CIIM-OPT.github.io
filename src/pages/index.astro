@@ -2,19 +2,15 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
-import Research from '../components/Research.astro';
-import Testimonials from '../components/Testimonials.astro';
-import Newsletter from '../components/Newsletter.astro';
+import ResearchCards from '../components/ResearchCards.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="CIIM - Research Center" description="CIIM is a research center that focuses on Molecular Dynamics, Chem-informatics and Omics.">
+<Layout>
   <Header />
   <main>
     <Hero />
-    <Research />
-    <!-- <Testimonials /> -->
-    <!-- <Newsletter /> -->
+    <ResearchCards limit={3} />
   </main>
   <Footer />
 </Layout>
