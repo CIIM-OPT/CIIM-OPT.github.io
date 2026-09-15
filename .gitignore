@@ -1,0 +1,30 @@
+# Build output
+dist/
+
+# Astro generated types
+.astro/
+
+# Dependencies
+node_modules/
+
+# Lockfiles: this project uses pnpm
+package-lock.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# macOS / editors / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
